@@ -11,7 +11,7 @@
 Trazer o eleitor mais próximo de tudo o que acontece com seu deputado.
 - Votações
 - Verbas utilizadas
-- Quantidade de acessores
+- Quantidade de assessores
 - Faltas
 
 # Linguagens e FrameWorks utilizados:
