@@ -3,6 +3,17 @@
 
 - Instalar o [NodeJs](https://nodejs.org/en/download/)
 
+1: Instalar dependências
+```JavaScript
+    npm install
+```
+2: Rodar o projeto
+```JavaScript
+    npm run dev
+```
+
+3: Abrir projeto na porta [3000](http://localhost:3000)
+
 # DEVs
 - [Renan L Zucheratto](https://github.com/renanzucheratto)
 - [Murilo Oliveira](https://github.com/muoliver)
