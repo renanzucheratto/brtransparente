@@ -16,7 +16,7 @@
 
 # DEVs
 - [Renan L Zucheratto](https://github.com/renanzucheratto)
-- [Murilo Oliveira](https://github.com/muoliver)
+- [Murilo O Eugenio](https://github.com/muriloeugenio)
 
 # Ideia do projeto
 Trazer o eleitor mais próximo de tudo o que acontece com seu deputado.
