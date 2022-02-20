@@ -24,6 +24,10 @@ Trazer o eleitor mais próximo de tudo o que acontece com seu deputado.
 - Verbas utilizadas
 - Quantidade de assessores
 - Faltas
+- - Manipular dados em forma de tabela e gráficos (despesas)
+- Usar as redes sociais para integração na página do deputado
+- Usar as frentes para organizar os deputados nas bancadas legislativas que participam
+- Na página de apresentação do deputado, apresentar as bancadas nas quais ele participa e apresentar em forma de botão, para que se acesse os dados das bancadas e de todos os participantes
 
 # Linguagens e FrameWorks utilizados:
 
