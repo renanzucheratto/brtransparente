@@ -31,7 +31,7 @@ function Navbar(){
             <Content>
                 <Logo as={NavLink} to="/">
                     <Img src={LogoImg} />
-                    <span>INFOBRASIL</span>
+                    <span>BRTRANSPARENTE</span>
                 </Logo>
                 <Menu>
                     <CustomLink to="/deputados">Deputados</CustomLink>
