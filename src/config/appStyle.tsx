@@ -2,6 +2,7 @@ import { createStitches, globalCss } from '@stitches/react'
 import {
     purpleA,
     purpleDarkA,
+    violet,
     yellow,
     tomato,
     green,
@@ -77,10 +78,18 @@ const globalSyles = globalCss({
         {
             fontFamily: 'WorkSans-SemiBoldItalic',
             src: 'local("WorkSans-SemiBoldItalic"), url("./src/config/fonts/WorkSans-SemiBoldItalic.ttf")',
+        },
+        {
+            fontFamily: 'WorkSans-Black',
+            src: 'local("WorkSans-Black"), url("./src/config/fonts/WorkSans-Black.ttf")',
         }
     ],
     '*': {
         fontFamily: 'WorkSans-Regular'
+    },
+    'p': {
+        margin: 0,
+        lineHeight: '20px'
     }
 })
 
@@ -99,6 +108,7 @@ const SizesDefaultApp = {
 const { styled, css } = createStitches({
     theme: {
         colors: {
+            ...violet,
             ...purpleA,
             ...purpleDarkA,
             ...yellow,
@@ -123,6 +133,7 @@ const { styled, css } = createStitches({
             bold: 'WorkSans-bold',
             extraBold: 'WorkSans-ExtraBold',
             extraBoldItalic: 'WorkSans-ExtraBoldItalic',
+            black: 'WorkSans-Black'
         },
         borderWidths: {
             1: '1px',
@@ -137,7 +148,12 @@ const { styled, css } = createStitches({
         space: SizesDefaultApp,
         sizes: SizesDefaultApp,
         radii: {
-            full: '100%'
+            1: '2px',
+            2: '4px',
+            3: '6px',
+            4: '8px',
+            5: '10px',
+            full: '100%',
         }
     }
 })
