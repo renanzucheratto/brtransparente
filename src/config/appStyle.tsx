@@ -2,85 +2,95 @@ import { createStitches, globalCss } from '@stitches/react'
 import {
     purpleA,
     purpleDarkA,
+    violet,
     yellow,
     tomato,
     green,
-    gray
+    gray,
+    orange
 } from '@radix-ui/colors'
 
 const globalSyles = globalCss({
     '@font-face': [
         {
             fontFamily: 'WorkSans-Regular',
-            src: 'local("WorkSans-Regular"), url("./src/config/fonts/WorkSans-Regular.ttf")',
+            src: 'local("WorkSans-Regular"), url("./src/assets/fonts/WorkSans-Regular.ttf")',
         },
         {
             fontFamily: 'WorkSans-Bold',
-            src: 'local("WorkSans-Bold"), url("./src/config/fonts/WorkSans-Bold.ttf")',
+            src: 'local("WorkSans-Bold"), url("./src/assets/fonts/WorkSans-Bold.ttf")',
         },
         {
             fontFamily: 'WorkSans-BoldItalic',
-            src: 'local("WorkSans-BoldItalic"), url("./src/config/fonts/WorkSans-BoldItalic.ttf")',
+            src: 'local("WorkSans-BoldItalic"), url("./src/assets/fonts/WorkSans-BoldItalic.ttf")',
         },
         {
             fontFamily: 'WorkSans-ExtraBold',
-            src: 'local("WorkSans-ExtraBold"), url("./src/config/fonts/WorkSans-ExtraBold.ttf")',
+            src: 'local("WorkSans-ExtraBold"), url("./src/assets/fonts/WorkSans-ExtraBold.ttf")',
         },
         {
             fontFamily: 'WorkSans-ExtraBoldItalic',
-            src: 'local("WorkSans-ExtraBoldItalic"), url("./src/config/fonts/WorkSans-ExtraBoldItalic.ttf")',
+            src: 'local("WorkSans-ExtraBoldItalic"), url("./src/assets/fonts/WorkSans-ExtraBoldItalic.ttf")',
         },
         {
             fontFamily: 'WorkSans-Thin',
-            src: 'local("WorkSans-Thin"), url("./src/config/fonts/WorkSans-Thin.ttf")',
+            src: 'local("WorkSans-Thin"), url("./src/assets/fonts/WorkSans-Thin.ttf")',
         },
         {
             fontFamily: 'WorkSans-ThinItalic',
-            src: 'local("WorkSans-ThinItalic"), url("./src/config/fonts/WorkSans-ThinItalic.ttf")',
+            src: 'local("WorkSans-ThinItalic"), url("./src/assets/fonts/WorkSans-ThinItalic.ttf")',
         },
         {
             fontFamily: 'WorkSans-SemiBold',
-            src: 'local("WorkSans-SemiBold"), url("./src/config/fonts/WorkSans-SemiBold.ttf")',
+            src: 'local("WorkSans-SemiBold"), url("./src/assets/fonts/WorkSans-SemiBold.ttf")',
         },
         {
             fontFamily: 'WorkSans-Italic',
-            src: 'local("WorkSans-Italic"), url("./src/config/fonts/WorkSans-Italic.ttf")',
+            src: 'local("WorkSans-Italic"), url("./src/assets/fonts/WorkSans-Italic.ttf")',
         },
         {
             fontFamily: 'WorkSans-ExtraLight',
-            src: 'local("WorkSans-ExtraLight"), url("./src/config/fonts/WorkSans-ExtraLight.ttf")',
+            src: 'local("WorkSans-ExtraLight"), url("./src/assets/fonts/WorkSans-ExtraLight.ttf")',
         },
         {
             fontFamily: 'WorkSans-ExtraLightLight',
-            src: 'local("WorkSans-ExtraLightLight"), url("./src/config/fonts/WorkSans-ExtraLightLight.ttf")',
+            src: 'local("WorkSans-ExtraLightLight"), url("./src/assets/fonts/WorkSans-ExtraLightLight.ttf")',
         },
         {
             fontFamily: 'WorkSans-Light',
-            src: 'local("WorkSans-Light"), url("./src/config/fonts/WorkSans-Light.ttf")',
+            src: 'local("WorkSans-Light"), url("./src/assets/fonts/WorkSans-Light.ttf")',
         },
         {
             fontFamily: 'WorkSans-LightItalic',
-            src: 'local("WorkSans-LightItalic"), url("./src/config/fonts/WorkSans-LightItalic.ttf")',
+            src: 'local("WorkSans-LightItalic"), url("./src/assets/fonts/WorkSans-LightItalic.ttf")',
         },
         {
             fontFamily: 'WorkSans-Medium',
-            src: 'local("WorkSans-Medium"), url("./src/config/fonts/WorkSans-Medium.ttf")',
+            src: 'local("WorkSans-Medium"), url("./src/assets/fonts/WorkSans-Medium.ttf")',
         },
         {
             fontFamily: 'WorkSans-MediumItalic',
-            src: 'local("WorkSans-ExtraLightLight"), url("./src/config/fonts/WorkSans-ExtraLightLight.ttf")',
+            src: 'local("WorkSans-ExtraLightLight"), url("./src/assets/fonts/WorkSans-ExtraLightLight.ttf")',
         },
         {
             fontFamily: 'WorkSans-SemiBold',
-            src: 'local("WorkSans-SemiBold"), url("./src/config/fonts/WorkSans-SemiBold.ttf")',
+            src: 'local("WorkSans-SemiBold"), url("./src/assets/fonts/WorkSans-SemiBold.ttf")',
         },
         {
             fontFamily: 'WorkSans-SemiBoldItalic',
-            src: 'local("WorkSans-SemiBoldItalic"), url("./src/config/fonts/WorkSans-SemiBoldItalic.ttf")',
+            src: 'local("WorkSans-SemiBoldItalic"), url("./src/assets/fonts/WorkSans-SemiBoldItalic.ttf")',
+        },
+        {
+            fontFamily: 'WorkSans-Black',
+            src: 'local("WorkSans-Black"), url("./src/assets/fonts/WorkSans-Black.ttf")',
         }
     ],
     '*': {
         fontFamily: 'WorkSans-Regular'
+    },
+    'p': {
+        margin: 0,
+        lineHeight: '20px'
     }
 })
 
@@ -99,23 +109,26 @@ const SizesDefaultApp = {
 const { styled, css } = createStitches({
     theme: {
         colors: {
+            ...violet,
             ...purpleA,
             ...purpleDarkA,
             ...yellow,
             ...tomato,
             ...green,
-            ...gray
+            ...gray,
+            ...orange
         },
         fontSizes: {
             1: '0.625rem', //10px
             2: '0.75rem', //12px
             3: '0.875rem', //14px
-            5: '1rem', //16px
-            6: '1.125rem', //18px
-            7: '1.25rem', //20px
-            8: '1.375rem', //22px
-            9: '1.5rem', //24px
-            10: '1.625rem', //26px
+            4: '1rem', //16px
+            5: '1.125rem', //18px
+            6: '1.25rem', //20px
+            7: '1.375rem', //22px
+            8: '1.5rem', //24px
+            9: '1.625rem', //26px
+            10: '1.625rem', //28px
         },
         fonts: {
             light: 'WorkSans-Light',
@@ -123,6 +136,7 @@ const { styled, css } = createStitches({
             bold: 'WorkSans-bold',
             extraBold: 'WorkSans-ExtraBold',
             extraBoldItalic: 'WorkSans-ExtraBoldItalic',
+            black: 'WorkSans-Black'
         },
         borderWidths: {
             1: '1px',
@@ -137,7 +151,15 @@ const { styled, css } = createStitches({
         space: SizesDefaultApp,
         sizes: SizesDefaultApp,
         radii: {
-            full: '100%'
+            1: '2px',
+            2: '4px',
+            3: '6px',
+            4: '8px',
+            5: '10px',
+            full: '100%',
+        },
+        shadows: {
+            1: '0 0 40px #ddd'
         }
     }
 })
