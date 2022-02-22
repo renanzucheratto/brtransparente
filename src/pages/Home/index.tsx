@@ -1,9 +1,19 @@
 import Navbar from "../../components/Navbar";
 import Card from "../../components/Card";
 import { ArrowUpIcon } from "@radix-ui/react-icons";
+import { Banner } from "./styles";
+
+function BannerComponent(){
+    return <Banner>
+        
+    </Banner>
+}
 
 function Home () {
     return <div className="container mt-3">
+
+        <BannerComponent />
+
         <div className="row">
             <div className="col-4">
                 <Card

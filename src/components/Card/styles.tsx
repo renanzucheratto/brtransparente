@@ -3,44 +3,37 @@ import { NavLink } from "react-router-dom"
 
 const ContainerCard = styled('div', {
     borderRadius: '$2',
-    borderWidth: '$1',
-    borderColor: '$gray6',
-    borderStyle: '$1',
-    padding: '$3',
-    paddingTop: '$6'
-})
-
-const ButtonCard = styled(NavLink, {
-    backgroundColor: '$violet10',
-    border: 'none',
-    fontSize: '$2',
-    color: '$gray1!important',
-    padding: '$1 $3',
-    display: 'inline-block',
-    borderRadius: '$2',
-    textTransform: 'uppercase',
-    fontFamily: '$bold',
-    marginTop: '$2',
-    '&:hover, &:active': {
-        textDecoration: 'none',
-        backgroundColor: '$violet9'
+    padding: '$4',
+    paddingTop: '$5',
+    variants: {
+        type: {
+            shadow: {
+                boxShadow: '$1'
+            },
+            outline: {
+                borderWidth: '$1',
+                borderColor: '$gray6',
+                borderStyle: '$1',
+                backgroundColor: '$gray1'
+            }
+        }
     }
 })
 
 const TitleCard = styled('p', {
     fontFamily: '$black',
-    fontSize: '$8',
+    fontSize: '$7',
     marginBottom: '$1',
     textTransform: 'uppercase'
 })
 
 const DescriptionCard = styled('p', {
-    fontSize: '$4'
+    fontSize: '$4',
+    display: 'inline-block'
 })
 
 export {
     ContainerCard,
-    ButtonCard,
     TitleCard,
     DescriptionCard
 }
