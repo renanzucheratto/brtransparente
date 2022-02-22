@@ -40,7 +40,7 @@ const Logo = styled('a', {
 })
 
 const Nav = styled('nav', {
-    padding: '10px 0',
+    padding: '$3 0',
 })
 
 const Content = styled('div', {

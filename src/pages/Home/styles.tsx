@@ -11,8 +11,6 @@ const Banner = styled('div', {
     height: '400px',
 })
 
-
-
 export {
     Banner
 }
